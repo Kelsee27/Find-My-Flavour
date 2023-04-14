@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navbar_show_map"
+        android:title="Map"
+        android:icon="@drawable/ic_baseline_map_24"/>
+    <item
+        android:id="@+id/navbar_manage_business"
+        android:title="Manage Business"
+        android:icon="@drawable/ic_baseline_manage_business_24"/>
+</menu>

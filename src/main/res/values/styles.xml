@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General styles-->
+    <style name="GeneralButton" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/FernGreen</item>
+    </style>
+
+    <style name="GeneralTitleTextView" parent="Theme.AppCompat">
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/FernGreen</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GeneralEditText" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="GeneralCardView" parent="CardView">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="cardBackgroundColor">@color/SeafoamGreen</item>
+    </style>
+
+    <!-- NavBar -->
+    <style name="NavBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:background">@color/FernGreen</item>
+        <item name="itemBackground">@color/FernGreen</item>
+        <item name="itemIconTint">@color/PeachPuff</item>
+        <item name="itemTextColor">@color/PeachPuff</item>
+    </style>
+
+    <!-- activity_add_hours -->
+    <style name="AddHoursTitleTextView" parent="GeneralTitleTextView">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="AddHoursTextViewWeekDay" parent="Theme.AppCompat">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/FernGreen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="AddHoursCardView" parent="GeneralCardView">
+    </style>
+    <style name="AddHoursButtons" parent="GeneralButton">
+        <item name="android:radius">4dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:onClick">setTime</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="AddHoursOpenCloseTextView" parent="Theme.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <!-- activity_add_business -->
+    <style name="AddBusinessTitleTextView" parent="GeneralTitleTextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="AddBusinessEditTexts" parent="GeneralEditText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <!-- fragment_login -->
+    <style name="LoginTitleTextView" parent="GeneralTitleTextView">
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="LoginEditText" parent="GeneralEditText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_margin">30dp</item>
+    </style>
+
+    <style name="LoginButtons" parent="GeneralButton">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">30dp</item>
+    </style>
+
+    <!-- activity_register -->
+    <style name="RegisterTitleTextView" parent="GeneralTitleTextView">
+        <item name="android:textSize">40sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="RegisterEditText" parent="GeneralEditText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_margin">30dp</item>
+    </style>
+
+    <style name="RegisterButtons" parent="GeneralButton">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">30dp</item>
+    </style>
+
+    <!-- fragment_manage_business -->
+    <style name="ManageBusinessTitleTextView" parent="GeneralTitleTextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="ManageBusinessCardView" parent="GeneralCardView">
+    </style>
+
+    <style name="ManageBusinessCardviewTitle" parent="GeneralTitleTextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="ManageBusinessBoldTextView" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ManageBusinessHoursLayout">
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+
+    <style name="ManageBusinessHourNamesTextView" parent="ManageBusinessBoldTextView">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">85dp</item>
+    </style>
+
+    <style name="ManageBusinessDataTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ManageBusinessButton" parent="GeneralButton">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

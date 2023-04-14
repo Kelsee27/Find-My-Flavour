@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddBusiness"
+    android:background="@color/PeachPuff">
+
+    <TextView
+        android:id="@+id/add_business_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/business_information"
+        style="@style/AddBusinessTitleTextView"/>
+
+    <EditText
+        android:id="@+id/enter_business_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/business_name"
+        style="@style/AddBusinessEditTexts"/>
+
+    <EditText
+        android:id="@+id/enter_business_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/business_description"
+        style="@style/AddBusinessEditTexts"/>
+
+    <EditText
+        android:id="@+id/enter_business_streetNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/business_street_number"
+        style="@style/AddBusinessEditTexts"/>
+
+    <EditText
+        android:id="@+id/enter_business_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/street_name"
+        style="@style/AddBusinessEditTexts"/>
+
+    <EditText
+        android:id="@+id/enter_business_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        style="@style/AddBusinessEditTexts"/>
+
+    <EditText
+        android:id="@+id/enter_business_postal_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/postal_code"
+        style="@style/AddBusinessEditTexts"/>
+
+    <Button
+        android:id="@+id/add_business_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/GeneralButton"
+        android:text="@string/set_hours"
+        android:onClick="insertNewBusiness"/>
+
+</LinearLayout>

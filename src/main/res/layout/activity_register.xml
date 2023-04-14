@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register"
+    android:background="@color/PeachPuff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        style="@style/RegisterTitleTextView"/>
+
+    <EditText
+        android:id="@+id/register_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/owner_name"
+        style="@style/RegisterEditText"/>
+
+    <EditText
+        android:id="@+id/register_email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/owner_email"
+        android:inputType="textEmailAddress"
+        style="@style/RegisterEditText"/>
+
+    <EditText
+        android:id="@+id/register_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        style="@style/RegisterEditText"/>
+
+    <EditText
+        android:id="@+id/register_confirm_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        style="@style/RegisterEditText"/>
+
+    <Button
+        android:id="@+id/register_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="submitRegistration"
+        style="@style/RegisterButtons"/>
+</LinearLayout>

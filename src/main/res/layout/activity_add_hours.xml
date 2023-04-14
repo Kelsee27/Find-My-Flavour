@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/PeachPuff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_hours"
+        style="@style/AddHoursTitleTextView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_mon_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_mon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tuesday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_tues_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_tues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_tues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_tues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_tues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wednesday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_wed_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_wed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_wed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_wed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_wed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thursday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_thurs_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_thurs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_thurs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_thurs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_thurs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_fri_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_fri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_fri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_fri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_fri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/saturday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_sat_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_sat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_sat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_sat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_sat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AddHoursCardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sunday"
+                        style="@style/AddHoursTextViewWeekDay"/>
+
+                    <CheckBox
+                        android:id="@+id/add_hours_checkbox_sun_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/closed_all_day"
+                        android:onClick="setClosedAllDay"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_open_sun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/open_closed" />
+
+                        <TextView
+                            android:id="@+id/add_hours_textview_close_sun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursOpenCloseTextView"
+                            android:text="@string/close_closed" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/add_hours_btn_open_sun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_open_time" />
+
+                        <Button
+                            android:id="@+id/add_hours_btn_close_sun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AddHoursButtons"
+                            android:text="@string/add_close_time" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_hours"
+                android:onClick="enterAllBusinessInfo"
+                style="@style/AddHoursButtons"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

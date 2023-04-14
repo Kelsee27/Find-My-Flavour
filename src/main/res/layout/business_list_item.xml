@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/business_item_cardview"
+    style="@style/ManageBusinessCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/business_list_item_name"
+            style="@style/ManageBusinessCardviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/business_name" />
+
+        <TextView
+            android:id="@+id/business_list_item_desc"
+            style="@style/ManageBusinessBoldTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/business_list_item_address"
+            style="@style/ManageBusinessBoldTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address" />
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/PeachPuff"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/monday" />
+
+            <TextView
+                android:id="@+id/business_list_item_mon_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00" />
+
+            <TextView
+                android:id="@+id/business_list_item_mon_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="16:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/tuesday" />
+
+            <TextView
+                android:id="@+id/business_list_item_tues_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00" />
+
+            <TextView
+                android:id="@+id/business_list_item_tues_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="16:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/PeachPuff"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/wednesday" />
+
+            <TextView
+                android:id="@+id/business_list_item_wed_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00" />
+
+            <TextView
+                android:id="@+id/business_list_item_wed_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="16:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/thursday" />
+
+            <TextView
+                android:id="@+id/business_list_item_thurs_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00" />
+
+            <TextView
+                android:id="@+id/business_list_item_thurs_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="16:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/PeachPuff"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/friday" />
+
+            <TextView
+                android:id="@+id/business_list_item_fri_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00" />
+
+            <TextView
+                android:id="@+id/business_list_item_fri_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="16:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/saturday" />
+
+            <TextView
+                android:id="@+id/business_list_item_sat_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:00" />
+
+            <TextView
+                android:id="@+id/business_list_item_sat_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="16:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ManageBusinessHoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/PeachPuff"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ManageBusinessHourNamesTextView"
+                android:layout_height="wrap_content"
+                android:text="@string/sunday" />
+
+            <TextView
+                android:id="@+id/business_list_item_sun_open"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/closed" />
+
+            <TextView
+                android:id="@+id/business_list_item_sun_close"
+                style="@style/ManageBusinessDataTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/closed" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/business_list_edit_info_btn"
+            style="@style/ManageBusinessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Business Info" />
+
+        <Button
+            android:id="@+id/business_list_edit_hours_btn"
+            style="@style/ManageBusinessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Business Hours" />
+
+        <Button
+            android:id="@+id/business_list_delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/BurntSienna"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Delete Business"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
